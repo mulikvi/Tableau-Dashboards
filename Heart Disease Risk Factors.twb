@@ -1,0 +1,2376 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1010.1014                               -->
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.IndividualControlFormatting.true...IndividualControlFormatting />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <repository-location id='HeartDiseaseRiskFactors_17364340087840' path='/workbooks' revision='1.1' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='heart_disease' inline='true' name='federated.1v5vq070gwtdsj101unyw1usnvl1' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='heart_disease' name='textscan.0ytmlwp1cgoj5d1fimpsy1jyz7f2'>
+            <connection class='textscan' directory='V:/OneDrive/Documents/DS/Projects/Tableau' filename='heart_disease.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0ytmlwp1cgoj5d1fimpsy1jyz7f2' name='heart_disease.csv' table='[heart_disease#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='real' name='Age' ordinal='0' />
+            <column datatype='string' name='Gender' ordinal='1' />
+            <column datatype='real' name='Blood Pressure' ordinal='2' />
+            <column datatype='real' name='Cholesterol Level' ordinal='3' />
+            <column datatype='string' name='Exercise Habits' ordinal='4' />
+            <column datatype='string' name='Smoking' ordinal='5' />
+            <column datatype='string' name='Family Heart Disease' ordinal='6' />
+            <column datatype='string' name='Diabetes' ordinal='7' />
+            <column datatype='real' name='BMI' ordinal='8' />
+            <column datatype='string' name='High Blood Pressure' ordinal='9' />
+            <column datatype='string' name='Low HDL Cholesterol' ordinal='10' />
+            <column datatype='string' name='High LDL Cholesterol' ordinal='11' />
+            <column datatype='string' name='Alcohol Consumption' ordinal='12' />
+            <column datatype='string' name='Stress Level' ordinal='13' />
+            <column datatype='real' name='Sleep Hours' ordinal='14' />
+            <column datatype='string' name='Sugar Consumption' ordinal='15' />
+            <column datatype='real' name='Triglyceride Level' ordinal='16' />
+            <column datatype='real' name='Fasting Blood Sugar' ordinal='17' />
+            <column datatype='real' name='CRP Level' ordinal='18' />
+            <column datatype='real' name='Homocysteine Level' ordinal='19' />
+            <column datatype='string' name='Heart Disease Status' ordinal='20' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[heart_disease.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Age]</local-name>
+            <parent-name>[heart_disease.csv]</parent-name>
+            <remote-alias>Age</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[heart_disease.csv_84AD749A63644EBDB7E845FE1D244DB6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gender</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Gender]</local-name>
+            <parent-name>[heart_disease.csv]</parent-name>
+            <remote-alias>Gender</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[heart_disease.csv_84AD749A63644EBDB7E845FE1D244DB6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Blood Pressure</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Blood Pressure]</local-name>
+            <parent-name>[heart_disease.csv]</parent-name>
+            <remote-alias>Blood Pressure</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[heart_disease.csv_84AD749A63644EBDB7E845FE1D244DB6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cholesterol Level</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Cholesterol Level]</local-name>
+            <parent-name>[heart_disease.csv]</parent-name>
+            <remote-alias>Cholesterol Level</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[heart_disease.csv_84AD749A63644EBDB7E845FE1D244DB6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Exercise Habits</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Exercise Habits]</local-name>
+            <parent-name>[heart_disease.csv]</parent-name>
+            <remote-alias>Exercise Habits</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[heart_disease.csv_84AD749A63644EBDB7E845FE1D244DB6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Smoking</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Smoking]</local-name>
+            <parent-name>[heart_disease.csv]</parent-name>
+            <remote-alias>Smoking</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[heart_disease.csv_84AD749A63644EBDB7E845FE1D244DB6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Family Heart Disease</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Family Heart Disease]</local-name>
+            <parent-name>[heart_disease.csv]</parent-name>
+            <remote-alias>Family Heart Disease</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[heart_disease.csv_84AD749A63644EBDB7E845FE1D244DB6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Diabetes</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Diabetes]</local-name>
+            <parent-name>[heart_disease.csv]</parent-name>
+            <remote-alias>Diabetes</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[heart_disease.csv_84AD749A63644EBDB7E845FE1D244DB6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BMI</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[BMI]</local-name>
+            <parent-name>[heart_disease.csv]</parent-name>
+            <remote-alias>BMI</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[heart_disease.csv_84AD749A63644EBDB7E845FE1D244DB6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>High Blood Pressure</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[High Blood Pressure]</local-name>
+            <parent-name>[heart_disease.csv]</parent-name>
+            <remote-alias>High Blood Pressure</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[heart_disease.csv_84AD749A63644EBDB7E845FE1D244DB6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Low HDL Cholesterol</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Low HDL Cholesterol]</local-name>
+            <parent-name>[heart_disease.csv]</parent-name>
+            <remote-alias>Low HDL Cholesterol</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[heart_disease.csv_84AD749A63644EBDB7E845FE1D244DB6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>High LDL Cholesterol</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[High LDL Cholesterol]</local-name>
+            <parent-name>[heart_disease.csv]</parent-name>
+            <remote-alias>High LDL Cholesterol</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[heart_disease.csv_84AD749A63644EBDB7E845FE1D244DB6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Alcohol Consumption</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Alcohol Consumption]</local-name>
+            <parent-name>[heart_disease.csv]</parent-name>
+            <remote-alias>Alcohol Consumption</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[heart_disease.csv_84AD749A63644EBDB7E845FE1D244DB6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Stress Level</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Stress Level]</local-name>
+            <parent-name>[heart_disease.csv]</parent-name>
+            <remote-alias>Stress Level</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[heart_disease.csv_84AD749A63644EBDB7E845FE1D244DB6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sleep Hours</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Sleep Hours]</local-name>
+            <parent-name>[heart_disease.csv]</parent-name>
+            <remote-alias>Sleep Hours</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[heart_disease.csv_84AD749A63644EBDB7E845FE1D244DB6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sugar Consumption</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Sugar Consumption]</local-name>
+            <parent-name>[heart_disease.csv]</parent-name>
+            <remote-alias>Sugar Consumption</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[heart_disease.csv_84AD749A63644EBDB7E845FE1D244DB6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Triglyceride Level</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Triglyceride Level]</local-name>
+            <parent-name>[heart_disease.csv]</parent-name>
+            <remote-alias>Triglyceride Level</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[heart_disease.csv_84AD749A63644EBDB7E845FE1D244DB6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fasting Blood Sugar</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Fasting Blood Sugar]</local-name>
+            <parent-name>[heart_disease.csv]</parent-name>
+            <remote-alias>Fasting Blood Sugar</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[heart_disease.csv_84AD749A63644EBDB7E845FE1D244DB6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CRP Level</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[CRP Level]</local-name>
+            <parent-name>[heart_disease.csv]</parent-name>
+            <remote-alias>CRP Level</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[heart_disease.csv_84AD749A63644EBDB7E845FE1D244DB6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Homocysteine Level</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Homocysteine Level]</local-name>
+            <parent-name>[heart_disease.csv]</parent-name>
+            <remote-alias>Homocysteine Level</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[heart_disease.csv_84AD749A63644EBDB7E845FE1D244DB6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Heart Disease Status</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Heart Disease Status]</local-name>
+            <parent-name>[heart_disease.csv]</parent-name>
+            <remote-alias>Heart Disease Status</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[heart_disease.csv_84AD749A63644EBDB7E845FE1D244DB6]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='real' default-format='n#,##0;-#,##0' name='[Age]' role='measure' type='quantitative' />
+      <column datatype='real' default-format='*0.0000;-0.0000' name='[BMI]' role='measure' type='quantitative' />
+      <column caption='BMI Categories' datatype='string' name='[Calculation_325385105065291776]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [BMI]&lt;18.5 THEN &quot;Underweight&quot;&#13;&#10;ELSEIF [BMI]&gt;=18.5 AND [BMI]&lt;25 THEN &quot;Healthy&quot;&#13;&#10;ELSEIF [BMI]&gt;=25 AND [BMI]&lt;30 THEN &quot;Overweight&quot;&#13;&#10;ELSEIF [BMI]&gt;=30 THEN &quot;Obese&quot;&#13;&#10;END' />
+      </column>
+      <column caption='Age Groups' datatype='string' name='[Calculation_325385105066393602]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [Age]&lt;=12 THEN &quot;Child&quot;&#13;&#10;ELSEIF [Age]&gt;12 AND [Age]&lt;=19 THEN &quot;Teenager&quot;&#13;&#10;ELSEIF [Age]&gt;19 AND [Age]&lt;=60 THEN &quot;Adults&quot;&#13;&#10;ELSEIF [Age]&gt;60 THEN &quot;Senior Adults&quot;&#13;&#10;END' />
+      </column>
+      <column caption='Heart Disease' datatype='boolean' name='[Calculation_325385105066999811]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [Heart Disease Status]=&quot;Yes&quot; THEN TRUE&#13;&#10;ELSE FALSE&#13;&#10;END' />
+      </column>
+      <column caption='Heart Diseases Percentage' datatype='real' default-format='p0.00%' name='[Calculation_325385105069355012]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM(IF [Heart Disease Status]=&quot;Yes&quot; THEN 1 ELSE 0 END)/COUNT([__tableau_internal_object_id__].[heart_disease.csv_84AD749A63644EBDB7E845FE1D244DB6])' />
+      </column>
+      <column caption='% of Heart Diseases title' datatype='string' name='[Calculation_325385105070219269]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='&quot;% of Heart Diseases&quot;' />
+      </column>
+      <column caption='Age - BMI Corr' datatype='real' name='[Calculation_325385105073319942]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='CORR([Age],[BMI])' />
+      </column>
+      <column datatype='string' name='[Gender (group)]' role='dimension' type='nominal'>
+        <calculation class='categorical-bin' column='[Gender]' new-bin='true'>
+          <bin default-name='false' value='&quot;Female&quot;'>
+            <value>%null%</value>
+            <value>&quot;Female&quot;</value>
+          </bin>
+        </calculation>
+      </column>
+      <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Heart Disease Status]' role='dimension' type='nominal' />
+      <column caption='heart_disease.csv' datatype='table' name='[__tableau_internal_object_id__].[heart_disease.csv_84AD749A63644EBDB7E845FE1D244DB6]' role='measure' type='quantitative' />
+      <column-instance column='[Age]' derivation='None' name='[none:Age:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_325385105065291776]' derivation='None' name='[none:Calculation_325385105065291776:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Calculation_325385105066393602]' derivation='None' name='[none:Calculation_325385105066393602:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Heart Disease Status]' derivation='None' name='[none:Heart Disease Status:nk]' pivot='key' type='nominal' />
+      <group hidden='true' name='[Exclusions (Age Groups,BMI Categories)]' name-style='unqualified' user:auto-column='exclude'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:Calculation_325385105066393602:nk]' />
+          <groupfilter function='level-members' level='[none:Calculation_325385105065291776:nk]' />
+        </groupfilter>
+      </group>
+      <group hidden='true' name='[Exclusions (Age,Gender)]' name-style='unqualified' user:auto-column='exclude'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:Age:qk]' />
+          <groupfilter function='level-members' level='[none:Gender:nk]' />
+        </groupfilter>
+      </group>
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/visha/AppData/Local/Temp/TableauTemp/#TableauTemp_14il6xs0iqso9c17cvfm41qwwkql.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='01/03/2025 12:51:04 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Age</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Age]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Age</remote-alias>
+              <ordinal>0</ordinal>
+              <family>heart_disease.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>64</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[heart_disease.csv_84AD749A63644EBDB7E845FE1D244DB6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Gender</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Gender]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Gender</remote-alias>
+              <ordinal>1</ordinal>
+              <family>heart_disease.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[heart_disease.csv_84AD749A63644EBDB7E845FE1D244DB6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Blood Pressure</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Blood Pressure]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Blood Pressure</remote-alias>
+              <ordinal>2</ordinal>
+              <family>heart_disease.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>64</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[heart_disease.csv_84AD749A63644EBDB7E845FE1D244DB6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Cholesterol Level</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Cholesterol Level]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Cholesterol Level</remote-alias>
+              <ordinal>3</ordinal>
+              <family>heart_disease.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>154</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[heart_disease.csv_84AD749A63644EBDB7E845FE1D244DB6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Exercise Habits</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Exercise Habits]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Exercise Habits</remote-alias>
+              <ordinal>4</ordinal>
+              <family>heart_disease.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[heart_disease.csv_84AD749A63644EBDB7E845FE1D244DB6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Smoking</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Smoking]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Smoking</remote-alias>
+              <ordinal>5</ordinal>
+              <family>heart_disease.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[heart_disease.csv_84AD749A63644EBDB7E845FE1D244DB6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Family Heart Disease</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Family Heart Disease]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Family Heart Disease</remote-alias>
+              <ordinal>6</ordinal>
+              <family>heart_disease.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[heart_disease.csv_84AD749A63644EBDB7E845FE1D244DB6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Diabetes</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Diabetes]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Diabetes</remote-alias>
+              <ordinal>7</ordinal>
+              <family>heart_disease.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[heart_disease.csv_84AD749A63644EBDB7E845FE1D244DB6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>BMI</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[BMI]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>BMI</remote-alias>
+              <ordinal>8</ordinal>
+              <family>heart_disease.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9596</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[heart_disease.csv_84AD749A63644EBDB7E845FE1D244DB6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>High Blood Pressure</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[High Blood Pressure]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>High Blood Pressure</remote-alias>
+              <ordinal>9</ordinal>
+              <family>heart_disease.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[heart_disease.csv_84AD749A63644EBDB7E845FE1D244DB6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Low HDL Cholesterol</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Low HDL Cholesterol]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Low HDL Cholesterol</remote-alias>
+              <ordinal>10</ordinal>
+              <family>heart_disease.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[heart_disease.csv_84AD749A63644EBDB7E845FE1D244DB6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>High LDL Cholesterol</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[High LDL Cholesterol]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>High LDL Cholesterol</remote-alias>
+              <ordinal>11</ordinal>
+              <family>heart_disease.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[heart_disease.csv_84AD749A63644EBDB7E845FE1D244DB6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Alcohol Consumption</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Alcohol Consumption]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Alcohol Consumption</remote-alias>
+              <ordinal>12</ordinal>
+              <family>heart_disease.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[heart_disease.csv_84AD749A63644EBDB7E845FE1D244DB6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Stress Level</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Stress Level]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Stress Level</remote-alias>
+              <ordinal>13</ordinal>
+              <family>heart_disease.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[heart_disease.csv_84AD749A63644EBDB7E845FE1D244DB6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Sleep Hours</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Sleep Hours]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Sleep Hours</remote-alias>
+              <ordinal>14</ordinal>
+              <family>heart_disease.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9601</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[heart_disease.csv_84AD749A63644EBDB7E845FE1D244DB6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Sugar Consumption</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Sugar Consumption]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Sugar Consumption</remote-alias>
+              <ordinal>15</ordinal>
+              <family>heart_disease.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[heart_disease.csv_84AD749A63644EBDB7E845FE1D244DB6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Triglyceride Level</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Triglyceride Level]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Triglyceride Level</remote-alias>
+              <ordinal>16</ordinal>
+              <family>heart_disease.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>361</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[heart_disease.csv_84AD749A63644EBDB7E845FE1D244DB6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Fasting Blood Sugar</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Fasting Blood Sugar]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Fasting Blood Sugar</remote-alias>
+              <ordinal>17</ordinal>
+              <family>heart_disease.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>84</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[heart_disease.csv_84AD749A63644EBDB7E845FE1D244DB6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CRP Level</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[CRP Level]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CRP Level</remote-alias>
+              <ordinal>18</ordinal>
+              <family>heart_disease.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9596</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[heart_disease.csv_84AD749A63644EBDB7E845FE1D244DB6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Homocysteine Level</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Homocysteine Level]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Homocysteine Level</remote-alias>
+              <ordinal>19</ordinal>
+              <family>heart_disease.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9601</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[heart_disease.csv_84AD749A63644EBDB7E845FE1D244DB6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Heart Disease Status</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Heart Disease Status]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Heart Disease Status</remote-alias>
+              <ordinal>20</ordinal>
+              <family>heart_disease.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[heart_disease.csv_84AD749A63644EBDB7E845FE1D244DB6]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Heart Disease Status:nk]' palette='red_gold_10_0' type='palette'>
+            <map to='#e15c48'>
+              <bucket>&quot;No&quot;</bucket>
+            </map>
+            <map to='#f9a750'>
+              <bucket>&quot;Yes&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Calculation_325385105066393602:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Teenager&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Senior Adults&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Adults&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Gender:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Male&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Female&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='heart_disease.csv' id='heart_disease.csv_84AD749A63644EBDB7E845FE1D244DB6'>
+            <properties context=''>
+              <relation connection='textscan.0ytmlwp1cgoj5d1fimpsy1jyz7f2' name='heart_disease.csv' table='[heart_disease#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='real' name='Age' ordinal='0' />
+                  <column datatype='string' name='Gender' ordinal='1' />
+                  <column datatype='real' name='Blood Pressure' ordinal='2' />
+                  <column datatype='real' name='Cholesterol Level' ordinal='3' />
+                  <column datatype='string' name='Exercise Habits' ordinal='4' />
+                  <column datatype='string' name='Smoking' ordinal='5' />
+                  <column datatype='string' name='Family Heart Disease' ordinal='6' />
+                  <column datatype='string' name='Diabetes' ordinal='7' />
+                  <column datatype='real' name='BMI' ordinal='8' />
+                  <column datatype='string' name='High Blood Pressure' ordinal='9' />
+                  <column datatype='string' name='Low HDL Cholesterol' ordinal='10' />
+                  <column datatype='string' name='High LDL Cholesterol' ordinal='11' />
+                  <column datatype='string' name='Alcohol Consumption' ordinal='12' />
+                  <column datatype='string' name='Stress Level' ordinal='13' />
+                  <column datatype='real' name='Sleep Hours' ordinal='14' />
+                  <column datatype='string' name='Sugar Consumption' ordinal='15' />
+                  <column datatype='real' name='Triglyceride Level' ordinal='16' />
+                  <column datatype='real' name='Fasting Blood Sugar' ordinal='17' />
+                  <column datatype='real' name='CRP Level' ordinal='18' />
+                  <column datatype='real' name='Homocysteine Level' ordinal='19' />
+                  <column datatype='string' name='Heart Disease Status' ordinal='20' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <shared-views>
+    <shared-view name='federated.1v5vq070gwtdsj101unyw1usnvl1'>
+      <datasources>
+        <datasource caption='heart_disease' name='federated.1v5vq070gwtdsj101unyw1usnvl1' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1v5vq070gwtdsj101unyw1usnvl1'>
+        <column datatype='real' default-format='n#,##0;-#,##0' name='[Age]' role='measure' type='quantitative' />
+        <column-instance column='[Age]' derivation='None' name='[none:Age:qk]' pivot='key' type='quantitative' />
+      </datasource-dependencies>
+      <filter class='quantitative' column='[federated.1v5vq070gwtdsj101unyw1usnvl1].[none:Age:qk]' included-values='in-range'>
+        <min>44.700000000000003</min>
+        <max>70.900000000000006</max>
+      </filter>
+    </shared-view>
+  </shared-views>
+  <worksheets>
+    <worksheet name='% of Heart Diseases'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='heart_disease' name='federated.1v5vq070gwtdsj101unyw1usnvl1' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1v5vq070gwtdsj101unyw1usnvl1'>
+            <column datatype='real' default-format='n#,##0;-#,##0' name='[Age]' role='measure' type='quantitative' />
+            <column caption='Heart Diseases Percentage' datatype='real' default-format='p0.00%' name='[Calculation_325385105069355012]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM(IF [Heart Disease Status]=&quot;Yes&quot; THEN 1 ELSE 0 END)/COUNT([__tableau_internal_object_id__].[heart_disease.csv_84AD749A63644EBDB7E845FE1D244DB6])' />
+            </column>
+            <column caption='% of Heart Diseases title' datatype='string' name='[Calculation_325385105070219269]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='&quot;% of Heart Diseases&quot;' />
+            </column>
+            <column datatype='string' name='[Heart Disease Status]' role='dimension' type='nominal' />
+            <column caption='heart_disease.csv' datatype='table' name='[__tableau_internal_object_id__].[heart_disease.csv_84AD749A63644EBDB7E845FE1D244DB6]' role='measure' type='quantitative' />
+            <column-instance column='[Age]' derivation='None' name='[none:Age:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_325385105070219269]' derivation='None' name='[none:Calculation_325385105070219269:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_325385105069355012]' derivation='User' name='[usr:Calculation_325385105069355012:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1v5vq070gwtdsj101unyw1usnvl1].[none:Age:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1v5vq070gwtdsj101unyw1usnvl1].[none:Calculation_325385105070219269:nk]' value='310' />
+            <format attr='height' value='174' />
+            <format attr='text-align' value='center' />
+            <format attr='font-weight' field='[federated.1v5vq070gwtdsj101unyw1usnvl1].[usr:Calculation_325385105069355012:qk]' value='bold' />
+            <format attr='font-family' field='[federated.1v5vq070gwtdsj101unyw1usnvl1].[usr:Calculation_325385105069355012:qk]' value='Tableau Medium' />
+            <format attr='color' field='[federated.1v5vq070gwtdsj101unyw1usnvl1].[usr:Calculation_325385105069355012:qk]' value='#632627' />
+            <format attr='font-size' field='[federated.1v5vq070gwtdsj101unyw1usnvl1].[usr:Calculation_325385105069355012:qk]' value='8' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='height' field='[federated.1v5vq070gwtdsj101unyw1usnvl1].[none:Calculation_325385105070219269:nk]' value='28' />
+            <format attr='background-color' scope='rows' value='#f5f1f0' />
+            <format attr='background-color' scope='cols' value='#f5f1f0' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' value='center' />
+            <format attr='color' scope='rows' value='#632627' />
+            <format attr='font-weight' scope='rows' value='bold' />
+            <format attr='color' field='[federated.1v5vq070gwtdsj101unyw1usnvl1].[none:Calculation_325385105070219269:nk]' value='#632627' />
+            <format attr='font-weight' field='[federated.1v5vq070gwtdsj101unyw1usnvl1].[none:Calculation_325385105070219269:nk]' value='bold' />
+            <format attr='font-size' field='[federated.1v5vq070gwtdsj101unyw1usnvl1].[none:Calculation_325385105070219269:nk]' value='8' />
+            <format attr='font-size' scope='rows' value='8' />
+            <format attr='font-family' scope='rows' value='Tableau Medium' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#f5f1f0' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1v5vq070gwtdsj101unyw1usnvl1].[usr:Calculation_325385105069355012:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run>&lt;</run>
+                <run>[federated.1v5vq070gwtdsj101unyw1usnvl1].[usr:Calculation_325385105069355012:qk]</run>
+                <run>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.1v5vq070gwtdsj101unyw1usnvl1].[none:Calculation_325385105070219269:nk]</cols>
+      </table>
+      <simple-id uuid='{0510CF40-D3A5-401C-B981-7518FE287A19}' />
+    </worksheet>
+    <worksheet name='Age Distribution'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='heart_disease' name='federated.1v5vq070gwtdsj101unyw1usnvl1' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1v5vq070gwtdsj101unyw1usnvl1'>
+            <column datatype='real' default-format='n#,##0;-#,##0' name='[Age]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Heart Disease Status]' role='dimension' type='nominal' />
+            <column-instance column='[__tableau_internal_object_id__].[heart_disease.csv_84AD749A63644EBDB7E845FE1D244DB6]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:heart_disease.csv_84AD749A63644EBDB7E845FE1D244DB6:qk]' pivot='key' type='quantitative' />
+            <column caption='heart_disease.csv' datatype='table' name='[__tableau_internal_object_id__].[heart_disease.csv_84AD749A63644EBDB7E845FE1D244DB6]' role='measure' type='quantitative' />
+            <column-instance column='[Age]' derivation='None' name='[none:Age:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Heart Disease Status]' derivation='None' name='[none:Heart Disease Status:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1v5vq070gwtdsj101unyw1usnvl1].[none:Heart Disease Status:nk]'>
+            <groupfilter function='member' level='[none:Heart Disease Status:nk]' member='&quot;Yes&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1v5vq070gwtdsj101unyw1usnvl1].[none:Heart Disease Status:nk]</column>
+            <column>[federated.1v5vq070gwtdsj101unyw1usnvl1].[none:Age:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1v5vq070gwtdsj101unyw1usnvl1].[__tableau_internal_object_id__].[cnt:heart_disease.csv_84AD749A63644EBDB7E845FE1D244DB6:qk]' scope='rows' value='' />
+            <encoding attr='space' class='0' domain-expand='false' field='[federated.1v5vq070gwtdsj101unyw1usnvl1].[__tableau_internal_object_id__].[cnt:heart_disease.csv_84AD749A63644EBDB7E845FE1D244DB6:qk]' field-type='quantitative' scope='rows' type='space' />
+            <format attr='display' class='0' field='[federated.1v5vq070gwtdsj101unyw1usnvl1].[__tableau_internal_object_id__].[cnt:heart_disease.csv_84AD749A63644EBDB7E845FE1D244DB6:qk]' scope='rows' value='false' />
+            <format attr='title' class='0' field='[federated.1v5vq070gwtdsj101unyw1usnvl1].[none:Age:qk]' scope='cols' value='' />
+            <format attr='display' class='0' field='[federated.1v5vq070gwtdsj101unyw1usnvl1].[none:Age:qk]' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#f5f1f0' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Age:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1v5vq070gwtdsj101unyw1usnvl1].[none:Age:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>No of patients:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1v5vq070gwtdsj101unyw1usnvl1].[__tableau_internal_object_id__].[cnt:heart_disease.csv_84AD749A63644EBDB7E845FE1D244DB6:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='mark-color' value='#632627' />
+                <format attr='size' value='0.25187844038009644' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1v5vq070gwtdsj101unyw1usnvl1].[__tableau_internal_object_id__].[cnt:heart_disease.csv_84AD749A63644EBDB7E845FE1D244DB6:qk]</rows>
+        <cols>[federated.1v5vq070gwtdsj101unyw1usnvl1].[none:Age:qk]</cols>
+      </table>
+      <simple-id uuid='{57726016-3E20-4E0D-9180-232530F3C73F}' />
+    </worksheet>
+    <worksheet name='Age-BMI Analysis'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='heart_disease' name='federated.1v5vq070gwtdsj101unyw1usnvl1' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1v5vq070gwtdsj101unyw1usnvl1'>
+            <column datatype='real' default-format='n#,##0;-#,##0' name='[Age]' role='measure' type='quantitative' />
+            <column datatype='real' default-format='*0.0000;-0.0000' name='[BMI]' role='measure' type='quantitative' />
+            <column caption='BMI Categories' datatype='string' name='[Calculation_325385105065291776]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [BMI]&lt;18.5 THEN &quot;Underweight&quot;&#13;&#10;ELSEIF [BMI]&gt;=18.5 AND [BMI]&lt;25 THEN &quot;Healthy&quot;&#13;&#10;ELSEIF [BMI]&gt;=25 AND [BMI]&lt;30 THEN &quot;Overweight&quot;&#13;&#10;ELSEIF [BMI]&gt;=30 THEN &quot;Obese&quot;&#13;&#10;END' />
+            </column>
+            <column caption='Age Groups' datatype='string' name='[Calculation_325385105066393602]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Age]&lt;=12 THEN &quot;Child&quot;&#13;&#10;ELSEIF [Age]&gt;12 AND [Age]&lt;=19 THEN &quot;Teenager&quot;&#13;&#10;ELSEIF [Age]&gt;19 AND [Age]&lt;=60 THEN &quot;Adults&quot;&#13;&#10;ELSEIF [Age]&gt;60 THEN &quot;Senior Adults&quot;&#13;&#10;END' />
+            </column>
+            <column datatype='string' name='[Heart Disease Status]' role='dimension' type='nominal' />
+            <column-instance column='[__tableau_internal_object_id__].[heart_disease.csv_84AD749A63644EBDB7E845FE1D244DB6]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:heart_disease.csv_84AD749A63644EBDB7E845FE1D244DB6:qk]' pivot='key' type='quantitative' />
+            <column caption='heart_disease.csv' datatype='table' name='[__tableau_internal_object_id__].[heart_disease.csv_84AD749A63644EBDB7E845FE1D244DB6]' role='measure' type='quantitative' />
+            <column-instance column='[Age]' derivation='Avg' name='[avg:Age:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[BMI]' derivation='Avg' name='[avg:BMI:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Age]' derivation='None' name='[none:Age:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_325385105065291776]' derivation='None' name='[none:Calculation_325385105065291776:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_325385105066393602]' derivation='None' name='[none:Calculation_325385105066393602:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Heart Disease Status]' derivation='None' name='[none:Heart Disease Status:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1v5vq070gwtdsj101unyw1usnvl1].[Exclusions (Age Groups,BMI Categories)]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='crossjoin'>
+                <groupfilter function='level-members' level='[none:Calculation_325385105066393602:nk]' />
+                <groupfilter function='level-members' level='[none:Calculation_325385105065291776:nk]' />
+              </groupfilter>
+              <groupfilter function='reorder-dimensionality'>
+                <groupfilter function='crossjoin'>
+                  <groupfilter function='member' level='[none:Calculation_325385105065291776:nk]' member='&quot;Obese&quot;' />
+                  <groupfilter function='member' level='[none:Calculation_325385105066393602:nk]' member='%null%' />
+                </groupfilter>
+                <order>
+                  <hierarchy name='[none:Calculation_325385105066393602:nk]' />
+                  <hierarchy name='[none:Calculation_325385105065291776:nk]' />
+                </order>
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1v5vq070gwtdsj101unyw1usnvl1].[none:Calculation_325385105066393602:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Calculation_325385105066393602:nk]' />
+              <groupfilter function='member' level='[none:Calculation_325385105066393602:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1v5vq070gwtdsj101unyw1usnvl1].[none:Heart Disease Status:nk]'>
+            <groupfilter function='member' level='[none:Heart Disease Status:nk]' member='&quot;Yes&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1v5vq070gwtdsj101unyw1usnvl1].[Exclusions (Age Groups,BMI Categories)]</column>
+            <column>[federated.1v5vq070gwtdsj101unyw1usnvl1].[none:Calculation_325385105066393602:nk]</column>
+            <column>[federated.1v5vq070gwtdsj101unyw1usnvl1].[none:Heart Disease Status:nk]</column>
+            <column>[federated.1v5vq070gwtdsj101unyw1usnvl1].[none:Age:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' scope='rows' value='#632627' />
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#f5f1f0' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='color' value='#632627' />
+            <format attr='font-size' value='8' />
+            <format attr='font-family' value='Tableau Medium' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <size column='[federated.1v5vq070gwtdsj101unyw1usnvl1].[__tableau_internal_object_id__].[cnt:heart_disease.csv_84AD749A63644EBDB7E845FE1D244DB6:qk]' />
+              <tooltip column='[federated.1v5vq070gwtdsj101unyw1usnvl1].[avg:BMI:qk]' />
+              <tooltip column='[federated.1v5vq070gwtdsj101unyw1usnvl1].[avg:Age:qk]' />
+              <text column='[federated.1v5vq070gwtdsj101unyw1usnvl1].[none:Calculation_325385105065291776:nk]' />
+              <text column='[federated.1v5vq070gwtdsj101unyw1usnvl1].[none:Calculation_325385105066393602:nk]' />
+              <color column='[federated.1v5vq070gwtdsj101unyw1usnvl1].[none:Calculation_325385105066393602:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>BMI Categories:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1v5vq070gwtdsj101unyw1usnvl1].[none:Calculation_325385105065291776:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Avg BMI</run>
+                <run bold='true' fontcolor='#787878'>:</run>
+                <run bold='true' fontcolor='#555555'>Æ </run>
+                <run bold='true'><![CDATA[ <[federated.1v5vq070gwtdsj101unyw1usnvl1].[avg:BMI:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Age Groups:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1v5vq070gwtdsj101unyw1usnvl1].[none:Calculation_325385105066393602:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Avg Age</run>
+                <run bold='true' fontcolor='#787878'>:</run>
+                <run bold='true' fontcolor='#555555'>Æ </run>
+                <run bold='true' fontcolor='#000000'><![CDATA[<[federated.1v5vq070gwtdsj101unyw1usnvl1].[avg:Age:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>No of patients:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1v5vq070gwtdsj101unyw1usnvl1].[__tableau_internal_object_id__].[cnt:heart_disease.csv_84AD749A63644EBDB7E845FE1D244DB6:qk]>]]></run>
+                <run>Æ&#10;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{E93C510C-7786-4066-9865-E1FA3D5E87C6}' />
+    </worksheet>
+    <worksheet name='BP Distribution'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='heart_disease' name='federated.1v5vq070gwtdsj101unyw1usnvl1' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1v5vq070gwtdsj101unyw1usnvl1'>
+            <column datatype='real' default-format='n#,##0;-#,##0' name='[Age]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Blood Pressure]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Heart Disease Status]' role='dimension' type='nominal' />
+            <column-instance column='[__tableau_internal_object_id__].[heart_disease.csv_84AD749A63644EBDB7E845FE1D244DB6]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:heart_disease.csv_84AD749A63644EBDB7E845FE1D244DB6:qk]' pivot='key' type='quantitative' />
+            <column caption='heart_disease.csv' datatype='table' name='[__tableau_internal_object_id__].[heart_disease.csv_84AD749A63644EBDB7E845FE1D244DB6]' role='measure' type='quantitative' />
+            <column-instance column='[Age]' derivation='None' name='[none:Age:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Blood Pressure]' derivation='None' name='[none:Blood Pressure:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Heart Disease Status]' derivation='None' name='[none:Heart Disease Status:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1v5vq070gwtdsj101unyw1usnvl1].[none:Heart Disease Status:nk]' filter-group='3'>
+            <groupfilter function='member' level='[none:Heart Disease Status:nk]' member='&quot;Yes&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1v5vq070gwtdsj101unyw1usnvl1].[none:Heart Disease Status:nk]</column>
+            <column>[federated.1v5vq070gwtdsj101unyw1usnvl1].[none:Age:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.1v5vq070gwtdsj101unyw1usnvl1].[__tableau_internal_object_id__].[cnt:heart_disease.csv_84AD749A63644EBDB7E845FE1D244DB6:qk]' scope='rows' value='false' />
+            <format attr='display' class='0' field='[federated.1v5vq070gwtdsj101unyw1usnvl1].[none:Blood Pressure:qk]' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='show-null-value-warning' value='false' />
+            <format attr='background-color' value='#f5f1f0' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Blood Pressure:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1v5vq070gwtdsj101unyw1usnvl1].[none:Blood Pressure:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>No of Patients:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1v5vq070gwtdsj101unyw1usnvl1].[__tableau_internal_object_id__].[cnt:heart_disease.csv_84AD749A63644EBDB7E845FE1D244DB6:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='size' value='0.14193369448184967' />
+                <format attr='mark-color' value='#632627' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1v5vq070gwtdsj101unyw1usnvl1].[__tableau_internal_object_id__].[cnt:heart_disease.csv_84AD749A63644EBDB7E845FE1D244DB6:qk]</rows>
+        <cols>[federated.1v5vq070gwtdsj101unyw1usnvl1].[none:Blood Pressure:qk]</cols>
+      </table>
+      <simple-id uuid='{51BC253C-3C0E-44B7-9E9E-C987E9D2B84A}' />
+    </worksheet>
+    <worksheet name='Cholesterol Distribution'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='heart_disease' name='federated.1v5vq070gwtdsj101unyw1usnvl1' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1v5vq070gwtdsj101unyw1usnvl1'>
+            <column datatype='real' default-format='n#,##0;-#,##0' name='[Age]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Cholesterol Level]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Heart Disease Status]' role='dimension' type='nominal' />
+            <column-instance column='[__tableau_internal_object_id__].[heart_disease.csv_84AD749A63644EBDB7E845FE1D244DB6]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:heart_disease.csv_84AD749A63644EBDB7E845FE1D244DB6:qk]' pivot='key' type='quantitative' />
+            <column caption='heart_disease.csv' datatype='table' name='[__tableau_internal_object_id__].[heart_disease.csv_84AD749A63644EBDB7E845FE1D244DB6]' role='measure' type='quantitative' />
+            <column-instance column='[Cholesterol Level]' derivation='Attribute' name='[attr:Cholesterol Level:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Age]' derivation='None' name='[none:Age:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Cholesterol Level]' derivation='None' name='[none:Cholesterol Level:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Heart Disease Status]' derivation='None' name='[none:Heart Disease Status:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1v5vq070gwtdsj101unyw1usnvl1].[none:Heart Disease Status:nk]' filter-group='3'>
+            <groupfilter function='member' level='[none:Heart Disease Status:nk]' member='&quot;Yes&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1v5vq070gwtdsj101unyw1usnvl1].[none:Heart Disease Status:nk]</column>
+            <column>[federated.1v5vq070gwtdsj101unyw1usnvl1].[none:Age:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.1v5vq070gwtdsj101unyw1usnvl1].[__tableau_internal_object_id__].[cnt:heart_disease.csv_84AD749A63644EBDB7E845FE1D244DB6:qk]' scope='rows' value='false' />
+            <format attr='display' class='0' field='[federated.1v5vq070gwtdsj101unyw1usnvl1].[none:Cholesterol Level:qk]' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='show-null-value-warning' value='false' />
+            <format attr='background-color' value='#f5f1f0' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <tooltip column='[federated.1v5vq070gwtdsj101unyw1usnvl1].[attr:Cholesterol Level:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Cholesterol Level:&#9;</run>
+                <run bold='true' fontcolor='#1b1b1b'><![CDATA[<[federated.1v5vq070gwtdsj101unyw1usnvl1].[none:Cholesterol Level:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>No of Patients:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1v5vq070gwtdsj101unyw1usnvl1].[__tableau_internal_object_id__].[cnt:heart_disease.csv_84AD749A63644EBDB7E845FE1D244DB6:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='size' value='0.16392265260219574' />
+                <format attr='mark-color' value='#632627' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1v5vq070gwtdsj101unyw1usnvl1].[__tableau_internal_object_id__].[cnt:heart_disease.csv_84AD749A63644EBDB7E845FE1D244DB6:qk]</rows>
+        <cols>[federated.1v5vq070gwtdsj101unyw1usnvl1].[none:Cholesterol Level:qk]</cols>
+      </table>
+      <simple-id uuid='{036639F1-59DF-4F3D-BBB4-9B0DB259CEEF}' />
+    </worksheet>
+    <worksheet name='Heart Disease Distribution'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='heart_disease' name='federated.1v5vq070gwtdsj101unyw1usnvl1' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1v5vq070gwtdsj101unyw1usnvl1'>
+            <column datatype='real' default-format='n#,##0;-#,##0' name='[Age]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Heart Disease Status]' role='dimension' type='nominal' />
+            <column-instance column='[__tableau_internal_object_id__].[heart_disease.csv_84AD749A63644EBDB7E845FE1D244DB6]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:heart_disease.csv_84AD749A63644EBDB7E845FE1D244DB6:qk]' pivot='key' type='quantitative' />
+            <column caption='heart_disease.csv' datatype='table' name='[__tableau_internal_object_id__].[heart_disease.csv_84AD749A63644EBDB7E845FE1D244DB6]' role='measure' type='quantitative' />
+            <column-instance column='[Age]' derivation='None' name='[none:Age:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Heart Disease Status]' derivation='None' name='[none:Heart Disease Status:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1v5vq070gwtdsj101unyw1usnvl1].[none:Gender:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Gender:nk]' />
+              <groupfilter function='member' level='[none:Gender:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1v5vq070gwtdsj101unyw1usnvl1].[none:Heart Disease Status:nk]' filter-group='3'>
+            <groupfilter function='member' level='[none:Heart Disease Status:nk]' member='&quot;Yes&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1v5vq070gwtdsj101unyw1usnvl1].[none:Heart Disease Status:nk]</column>
+            <column>[federated.1v5vq070gwtdsj101unyw1usnvl1].[none:Gender:nk]</column>
+            <column>[federated.1v5vq070gwtdsj101unyw1usnvl1].[none:Age:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-align' field='[federated.1v5vq070gwtdsj101unyw1usnvl1].[__tableau_internal_object_id__].[cnt:heart_disease.csv_84AD749A63644EBDB7E845FE1D244DB6:qk]' value='left' />
+            <format attr='text-format' field='[federated.1v5vq070gwtdsj101unyw1usnvl1].[__tableau_internal_object_id__].[cnt:heart_disease.csv_84AD749A63644EBDB7E845FE1D244DB6:qk]' value='N' />
+            <format attr='font-size' field='[federated.1v5vq070gwtdsj101unyw1usnvl1].[__tableau_internal_object_id__].[cnt:heart_disease.csv_84AD749A63644EBDB7E845FE1D244DB6:qk]' value='1' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='background-color' field='[federated.1v5vq070gwtdsj101unyw1usnvl1].[__tableau_internal_object_id__].[cnt:heart_disease.csv_84AD749A63644EBDB7E845FE1D244DB6:qk]' value='#ffffff' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-size' field='[federated.1v5vq070gwtdsj101unyw1usnvl1].[__tableau_internal_object_id__].[cnt:heart_disease.csv_84AD749A63644EBDB7E845FE1D244DB6:qk]' value='8' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#f5f1f0' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#f5f1f0' />
+          </style-rule>
+          <style-rule element='axis-title'>
+            <format attr='font-size' field='[federated.1v5vq070gwtdsj101unyw1usnvl1].[__tableau_internal_object_id__].[cnt:heart_disease.csv_84AD749A63644EBDB7E845FE1D244DB6:qk]' value='4' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='color' value='#aa0000' />
+            <format attr='font-family' value='Tableau Medium' />
+            <_.fcp.IndividualControlFormatting.true...format attr='font-weight' field='[federated.1v5vq070gwtdsj101unyw1usnvl1].[none:Age:qk]' value='bold' />
+            <format attr='background-color' value='#00000000' />
+            <_.fcp.IndividualControlFormatting.true...format attr='color' field='[federated.1v5vq070gwtdsj101unyw1usnvl1].[none:Age:qk]' value='#632627' />
+          </style-rule>
+          <style-rule element='quick-filter-title'>
+            <_.fcp.IndividualControlFormatting.true...format attr='font-size' field='[federated.1v5vq070gwtdsj101unyw1usnvl1].[none:Age:qk]' value='8' />
+            <format attr='color' value='#aa0000' />
+            <_.fcp.IndividualControlFormatting.true...format attr='font-weight' field='[federated.1v5vq070gwtdsj101unyw1usnvl1].[none:Age:qk]' value='bold' />
+            <_.fcp.IndividualControlFormatting.true...format attr='color' field='[federated.1v5vq070gwtdsj101unyw1usnvl1].[none:Age:qk]' value='#632627' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.1v5vq070gwtdsj101unyw1usnvl1].[none:Gender:nk]' />
+              <text column='[federated.1v5vq070gwtdsj101unyw1usnvl1].[__tableau_internal_object_id__].[cnt:heart_disease.csv_84AD749A63644EBDB7E845FE1D244DB6:qk]' />
+              <text column='[federated.1v5vq070gwtdsj101unyw1usnvl1].[none:Gender:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true' fontcolor='#000000' fontsize='9'>&lt;</run>
+                <run bold='true' fontcolor='#000000' fontsize='9'>[federated.1v5vq070gwtdsj101unyw1usnvl1].[__tableau_internal_object_id__].[cnt:heart_disease.csv_84AD749A63644EBDB7E845FE1D244DB6:qk]</run>
+                <run bold='true' fontcolor='#000000' fontsize='9'>&gt; patients are &lt;</run>
+                <run bold='true' fontcolor='#000000' fontsize='9'>[federated.1v5vq070gwtdsj101unyw1usnvl1].[none:Gender:nk]</run>
+                <run bold='true' fontcolor='#000000' fontsize='9'>&gt;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <customized-label>
+              <formatted-text />
+            </customized-label>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-size' value='3' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{005E3D75-3790-4DB2-9CC9-1A9A1B6A6322}' />
+    </worksheet>
+    <worksheet name='Triglyceride Distribution'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='heart_disease' name='federated.1v5vq070gwtdsj101unyw1usnvl1' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1v5vq070gwtdsj101unyw1usnvl1'>
+            <column datatype='real' default-format='n#,##0;-#,##0' name='[Age]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Heart Disease Status]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Triglyceride Level]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[heart_disease.csv_84AD749A63644EBDB7E845FE1D244DB6]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:heart_disease.csv_84AD749A63644EBDB7E845FE1D244DB6:qk]' pivot='key' type='quantitative' />
+            <column caption='heart_disease.csv' datatype='table' name='[__tableau_internal_object_id__].[heart_disease.csv_84AD749A63644EBDB7E845FE1D244DB6]' role='measure' type='quantitative' />
+            <column-instance column='[Triglyceride Level]' derivation='Attribute' name='[attr:Triglyceride Level:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Age]' derivation='None' name='[none:Age:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Heart Disease Status]' derivation='None' name='[none:Heart Disease Status:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Triglyceride Level]' derivation='None' name='[none:Triglyceride Level:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1v5vq070gwtdsj101unyw1usnvl1].[none:Heart Disease Status:nk]' filter-group='3'>
+            <groupfilter function='member' level='[none:Heart Disease Status:nk]' member='&quot;Yes&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1v5vq070gwtdsj101unyw1usnvl1].[none:Heart Disease Status:nk]</column>
+            <column>[federated.1v5vq070gwtdsj101unyw1usnvl1].[none:Age:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.1v5vq070gwtdsj101unyw1usnvl1].[__tableau_internal_object_id__].[cnt:heart_disease.csv_84AD749A63644EBDB7E845FE1D244DB6:qk]' scope='rows' value='false' />
+            <format attr='display' class='0' field='[federated.1v5vq070gwtdsj101unyw1usnvl1].[none:Triglyceride Level:qk]' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='show-null-value-warning' value='false' />
+            <format attr='background-color' value='#f5f1f0' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='5' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <tooltip column='[federated.1v5vq070gwtdsj101unyw1usnvl1].[__tableau_internal_object_id__].[cnt:heart_disease.csv_84AD749A63644EBDB7E845FE1D244DB6:qk]' />
+              <tooltip column='[federated.1v5vq070gwtdsj101unyw1usnvl1].[attr:Triglyceride Level:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Triglyceride Level:&#9;</run>
+                <run bold='true' fontcolor='#000000'><![CDATA[<[federated.1v5vq070gwtdsj101unyw1usnvl1].[none:Triglyceride Level:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>No of Patients:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1v5vq070gwtdsj101unyw1usnvl1].[__tableau_internal_object_id__].[cnt:heart_disease.csv_84AD749A63644EBDB7E845FE1D244DB6:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='size' value='0.14193369448184967' />
+                <format attr='mark-color' value='#632627' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1v5vq070gwtdsj101unyw1usnvl1].[__tableau_internal_object_id__].[cnt:heart_disease.csv_84AD749A63644EBDB7E845FE1D244DB6:qk]</rows>
+        <cols>[federated.1v5vq070gwtdsj101unyw1usnvl1].[none:Triglyceride Level:qk]</cols>
+      </table>
+      <simple-id uuid='{AFA23B37-DD0F-4C03-80FE-C7C71F1ADD07}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Decoding Heart Health'>
+      <style>
+        <style-rule element='dash-text'>
+          <format attr='vertical-align' id='dash-text_33' value='center' />
+          <format attr='text-align' id='dash-text_33' value='center' />
+        </style-rule>
+      </style>
+      <size sizing-mode='automatic' />
+      <datasources>
+        <datasource caption='heart_disease' name='federated.1v5vq070gwtdsj101unyw1usnvl1' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1v5vq070gwtdsj101unyw1usnvl1'>
+        <column datatype='real' default-format='n#,##0;-#,##0' name='[Age]' role='measure' type='quantitative' />
+        <column-instance column='[Age]' derivation='None' name='[none:Age:qk]' pivot='key' type='quantitative' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='22390' id='6' param='horz' type-v2='layout-flow' w='10471' x='2664' y='12830'>
+            <zone h='22390' id='7' param='vert' type-v2='layout-flow' w='10471' x='2664' y='12830'>
+              <zone h='22390' id='9' name='% of Heart Diseases' show-title='false' w='10471' x='2664' y='12830'>
+                <layout-cache cell-count-h='1' non-cell-size-h='28' type-h='cell' type-w='cell' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                  <format attr='background-color' value='#f5f1f0' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone h='63774' id='8' param='vert' type-v2='layout-flow' w='31970' x='496' y='35220'>
+            <zone fixed-size='32' h='4025' id='47' is-fixed='true' param='vert' type-v2='layout-flow' w='31970' x='496' y='35220'>
+              <zone forceUpdate='true' h='3773' id='48' type-v2='text' w='31970' x='496' y='35220'>
+                <formatted-text>
+                  <run bold='true' fontalignment='1' fontcolor='#632627' fontname='Tableau Medium' fontsize='8'>Age - BMI Analysis</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone h='59749' id='20' name='Age-BMI Analysis' show-title='false' w='31970' x='496' y='39245'>
+              <layout-cache cell-count-h='1' type-h='cell' type-w='fixed' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone h='37211' id='14' param='vert' type-v2='layout-flow' w='63135' x='36369' y='12789'>
+            <zone h='37211' id='31' is-fixed='true' type-v2='layout-basic' w='63135' x='36369' y='12789'>
+              <zone h='37211' id='17' param='vert' type-v2='layout-flow' w='31909' x='36369' y='12789'>
+                <zone forceUpdate='true' h='3773' id='50' type-v2='text' w='31909' x='36369' y='12789'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontcolor='#632627' fontname='Tableau Medium' fontsize='8'>Age Distribution</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='33438' id='19' name='Age Distribution' show-title='false' w='31909' x='36369' y='16562'>
+                  <layout-cache minheight='100' minwidth='100' type-h='scalable' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone h='37211' id='32' param='vert' type-v2='layout-flow' w='31226' x='68278' y='12789'>
+                <zone fixed-size='32' h='4025' id='53' is-fixed='true' param='vert' type-v2='layout-flow' w='31226' x='68278' y='12789'>
+                  <zone forceUpdate='true' h='3773' id='54' type-v2='text' w='31226' x='68278' y='12789'>
+                    <formatted-text>
+                      <run bold='true' fontalignment='1' fontcolor='#632627' fontname='Tableau Medium' fontsize='8'>BP Distribution</run>
+                    </formatted-text>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+                <zone h='33186' id='25' name='BP Distribution' show-title='false' w='31226' x='68278' y='16814'>
+                  <layout-cache minheight='100' minwidth='100' type-h='scalable' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone h='43397' id='18' param='vert' type-v2='layout-flow' w='31723' x='36369' y='55597'>
+            <zone h='43397' id='26' name='Cholesterol Distribution' show-title='false' w='31723' x='36369' y='55597'>
+              <layout-cache minheight='100' type-h='scalable' type-w='fixed' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone h='18365' id='21' param='horz' type-v2='layout-flow' w='19331' x='13135' y='16855'>
+            <zone h='18365' id='22' name='Heart Disease Distribution' show-title='false' w='19331' x='13135' y='16855'>
+              <layout-cache cell-count-w='1' type-h='cell' type-w='cell' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone h='43397' id='27' name='Triglyceride Distribution' show-title='false' w='31412' x='68092' y='55597'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='6415' id='28' param='vert' type-v2='layout-flow' w='19578' x='79926' y='1006'>
+            <zone fixed-size='108' h='6415' id='29' is-fixed='true' param='horz' type-v2='layout-flow' w='19578' x='79926' y='1006'>
+              <zone h='6415' id='23' name='Heart Disease Distribution' param='[federated.1v5vq070gwtdsj101unyw1usnvl1].[none:Age:qk]' show-domain='false' show-null-ctrls='false' type-v2='filter' w='19578' x='79926' y='1006'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                  <format attr='background-color' value='#f5f1f0' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone h='6415' id='30' param='horz' type-v2='layout-flow' w='79430' x='496' y='1006'>
+            <zone forceUpdate='true' h='6415' id='33' type-v2='text' w='79430' x='496' y='1006'>
+              <formatted-text>
+                <run bold='true' fontcolor='#632627' fontname='Tableau Medium' fontsize='12'>Decoding Heart Health</run>
+              </formatted-text>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+                <format attr='background-color' value='#f5f1f0' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone h='22431' id='59' type-v2='empty' w='2168' x='496' y='12789' />
+          <zone h='86205' id='45' param='vert' type-v2='layout-flow' w='3903' x='32466' y='12789' />
+          <zone forceUpdate='true' h='4066' id='46' type-v2='text' w='19331' x='13135' y='12789'>
+            <formatted-text>
+              <run bold='true' fontalignment='1' fontcolor='#632627' fontname='Tableau Medium' fontsize='8'>Heart Patients by Gender</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='5597' id='55' param='vert' type-v2='layout-flow' w='1982' x='97522' y='50000' />
+          <zone h='5597' id='57' type-v2='text' w='31909' x='36369' y='50000'>
+            <formatted-text>
+              <run bold='true' fontalignment='1' fontcolor='#632627' fontname='Tableau Medium' fontsize='8'>Cholesterol Distribution</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone forceUpdate='true' h='5597' id='60' type-v2='text' w='29244' x='68278' y='50000'>
+            <formatted-text>
+              <run bold='true' fontalignment='1' fontcolor='#632627' fontname='Tableau Medium' fontsize='8'>Triglyceride Distribution</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+            <format attr='background-color' value='#f5f1f0' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='2300' minheight='2300' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='70' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97988' id='69' param='vert' type-v2='layout-flow' w='99008' x='496' y='1006'>
+                <zone forceUpdate='true' h='6415' id='33' type-v2='text' w='79430' x='496' y='1006'>
+                  <formatted-text>
+                    <run bold='true' fontcolor='#632627' fontname='Tableau Medium' fontsize='12'>Decoding Heart Health</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#f5f1f0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='4066' id='46' type-v2='text' w='19331' x='13135' y='12789'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontcolor='#632627' fontname='Tableau Medium' fontsize='8'>Heart Patients by Gender</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='3773' id='50' type-v2='text' w='31909' x='36369' y='12789'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontcolor='#632627' fontname='Tableau Medium' fontsize='8'>Age Distribution</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='3773' id='54' type-v2='text' w='31226' x='68278' y='12789'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontcolor='#632627' fontname='Tableau Medium' fontsize='8'>BP Distribution</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='171' h='22390' id='9' is-fixed='true' name='% of Heart Diseases' show-title='false' w='10471' x='2664' y='12830'>
+                  <layout-cache cell-count-h='1' non-cell-size-h='28' type-h='cell' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#f5f1f0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='260' h='33438' id='19' is-fixed='true' name='Age Distribution' show-title='false' w='31909' x='36369' y='16562'>
+                  <layout-cache minheight='100' minwidth='100' type-h='scalable' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='257' h='33186' id='25' is-fixed='true' name='BP Distribution' show-title='false' w='31226' x='68278' y='16814'>
+                  <layout-cache minheight='100' minwidth='100' type-h='scalable' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6415' id='23' name='Heart Disease Distribution' param='[federated.1v5vq070gwtdsj101unyw1usnvl1].[none:Age:qk]' show-domain='false' show-null-ctrls='false' type-v2='filter' w='19578' x='79926' y='1006'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#f5f1f0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='139' h='18365' id='22' is-fixed='true' name='Heart Disease Distribution' show-title='false' w='19331' x='13135' y='16855'>
+                  <layout-cache cell-count-w='1' type-h='cell' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='3773' id='48' type-v2='text' w='31970' x='496' y='35220'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontcolor='#632627' fontname='Tableau Medium' fontsize='8'>Age - BMI Analysis</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='59749' id='20' is-fixed='true' name='Age-BMI Analysis' show-title='false' w='31970' x='496' y='39245'>
+                  <layout-cache cell-count-h='1' type-h='cell' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='5597' id='57' type-v2='text' w='31909' x='36369' y='50000'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontcolor='#632627' fontname='Tableau Medium' fontsize='8'>Cholesterol Distribution</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='5597' id='60' type-v2='text' w='29244' x='68278' y='50000'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontcolor='#632627' fontname='Tableau Medium' fontsize='8'>Triglyceride Distribution</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='43397' id='26' is-fixed='true' name='Cholesterol Distribution' show-title='false' w='31723' x='36369' y='55597'>
+                  <layout-cache minheight='100' type-h='scalable' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='43397' id='27' is-fixed='true' name='Triglyceride Distribution' show-title='false' w='31412' x='68092' y='55597'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+                <format attr='background-color' value='#f5f1f0' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{EF067958-A515-446E-8B1C-029E46D2373D}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='dashboard' maximized='true' name='Decoding Heart Health'>
+      <viewpoints>
+        <viewpoint name='% of Heart Diseases'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Age Distribution'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Age-BMI Analysis'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='BP Distribution'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Cholesterol Distribution'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Heart Disease Distribution'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Triglyceride Distribution'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='23' />
+      <simple-id uuid='{10411932-71B8-4592-AD09-EA94583FD186}' />
+    </window>
+    <window class='worksheet' hidden='true' name='% of Heart Diseases'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1v5vq070gwtdsj101unyw1usnvl1].[none:Calculation_325385105070219269:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{BEB18860-7DEA-43B0-A390-2796E82147F1}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Age Distribution'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1v5vq070gwtdsj101unyw1usnvl1].[none:Heart Disease Status:nk]</field>
+          </color-one-way>
+        </highlight>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{0EDB924C-3588-4F70-B386-5D6210468896}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Age-BMI Analysis'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1v5vq070gwtdsj101unyw1usnvl1].[none:Calculation_325385105065291776:nk]</field>
+            <field>[federated.1v5vq070gwtdsj101unyw1usnvl1].[none:Calculation_325385105066393602:nk]</field>
+            <field>[federated.1v5vq070gwtdsj101unyw1usnvl1].[none:Heart Disease Status:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{68B3CAD6-4BD0-4750-A1E4-16C5C284F057}' />
+    </window>
+    <window class='worksheet' hidden='true' name='BP Distribution'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{03AE9CF8-E218-4BB7-A4E6-F99748758D8F}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Cholesterol Distribution'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1v5vq070gwtdsj101unyw1usnvl1].[none:Cholesterol Level:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{4DA8732C-B4FC-483D-A299-EB983FE5F41C}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Heart Disease Distribution'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1v5vq070gwtdsj101unyw1usnvl1].[none:Age:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1v5vq070gwtdsj101unyw1usnvl1].[none:Gender:nk]</field>
+            <field>[federated.1v5vq070gwtdsj101unyw1usnvl1].[none:Heart Disease Status:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{96991190-2888-4729-A06E-5B749C28D355}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Triglyceride Distribution'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1v5vq070gwtdsj101unyw1usnvl1].[none:Triglyceride Level:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{57AEEE2B-FCDE-4232-8AC7-AE244DB56315}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Decoding Heart Health' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
