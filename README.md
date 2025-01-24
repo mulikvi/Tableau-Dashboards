@@ -3,7 +3,15 @@
 
 # <b>1)Stocks Dashboard </b><br>
 [Stocks Performance](https://public.tableau.com/app/profile/vishakha.mulik7950/viz/StocksDashboard_17358247817720/StocksPerformance?publish=yes)<br>
-[Individual Stock Tracker](https://public.tableau.com/app/profile/vishakha.mulik7950/viz/StocksDashboard_17358247817720/Dashboard2)
+[Individual Stock Tracker](https://public.tableau.com/app/profile/vishakha.mulik7950/viz/StocksDashboard_17358247817720/Dashboard2)<br><br>
+![Stocks Performance](https://github.com/user-attachments/assets/7b2b7b79-e9e1-422d-b730-79e626bec499)
+
+
+
+![Individual Stock Tracker](https://github.com/user-attachments/assets/c0e1f65e-e33c-42f5-8864-46c5acc9b571)
+
+
+
 
 ## Overview
 The **Stock Performance Dashboard** is a dynamic Tableau visualization designed to provide comprehensive insights into individual and portfolio stock performance. Powered by Google Sheets, this dashboard helps users track profits, losses, volatility, and historical trends across multiple stocks.
@@ -26,7 +34,10 @@ The dashboard connects directly to Google Sheets for real-time data updates, ena
 
 
 # <b>2)Heart Disease Risk Factors</b><br>
-[Decoding Heart Health](https://public.tableau.com/app/profile/vishakha.mulik7950/viz/HeartDiseaseRiskFactors_17364340087840/DecodingHeartHealth?publish=yes)
+[Decoding Heart Health](https://public.tableau.com/app/profile/vishakha.mulik7950/viz/HeartDiseaseRiskFactors_17364340087840/DecodingHeartHealth?publish=yes)<br>
+
+
+<img width="709" alt="heart disease risk factors" src="https://github.com/user-attachments/assets/993b3ec5-483f-468c-a2ff-bbccd36274e8" />
 
 ## Overview
 The **Decoding Heart Health Dashboard** is an interactive Tableau visualization designed to provide insights into key factors affecting heart health. By analyzing metrics like age, BMI, blood pressure, cholesterol, and triglyceride levels, the dashboard helps identify patterns and trends that can influence heart disease risks.
